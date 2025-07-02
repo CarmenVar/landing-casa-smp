@@ -1,8 +1,11 @@
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import PropertyDetails from '../components/PropertyDetails';
+import ImageCarousel from '../components/ImageCarousel';
+import LocationMap from '../components/LocationMap';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 export default function Home() {
   return (
@@ -18,11 +21,20 @@ export default function Home() {
       {/* Sección de características de la propiedad */}
       <PropertyDetails />
       
+      {/* Galería de fotos con carrousel */}
+      <ImageCarousel />
+      
+      {/* Ubicación y mapa */}
+      <LocationMap />
+      
       {/* Formulario de contacto */}
       <ContactForm />
       
       {/* Footer */}
       <Footer />
+      
+      {/* Botón flotante de WhatsApp */}
+      <WhatsAppButton />
     </div>
   );
 }
