@@ -2,6 +2,7 @@ import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import PropertyDetails from '../components/PropertyDetails';
 import ImageCarousel from '../components/ImageCarousel';
+import PropertyVideo from '../components/PropertyVideo';
 import LocationMap from '../components/LocationMap';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
@@ -23,6 +24,9 @@ export default function Home() {
       
       {/* Galería de fotos con carrousel */}
       <ImageCarousel />
+      
+      {/* Video de recorrido virtual */}
+      <PropertyVideo />
       
       {/* Ubicación y mapa */}
       <LocationMap />

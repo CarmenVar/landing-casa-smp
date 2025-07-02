@@ -46,7 +46,7 @@ export default function HeroSection() {
     <section 
       role="region" 
       aria-label={t.imageAlt}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background-light to-background-soft"
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
@@ -60,7 +60,7 @@ export default function HeroSection() {
           quality={90}
         />
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40 z-10"></div>
+        <div className="absolute inset-0 bg-neutral-700/50 z-10"></div>
       </div>
 
       {/* Content */}
@@ -91,7 +91,7 @@ export default function HeroSection() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
-              className="btn btn-primary btn-lg text-lg px-8 py-4"
+              className="btn btn-primary btn-lg text-lg px-8 py-4 rounded-full"
               onClick={handleContactClick}
               onKeyDown={handleKeyDown}
               role="button"
@@ -102,7 +102,7 @@ export default function HeroSection() {
             </button>
             
             <button
-              className="btn btn-outline btn-lg text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-gray-900"
+              className="btn btn-outline btn-lg text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-gray-900 rounded-full"
               onClick={() => {
                 const featuresSection = document.getElementById('features');
                 featuresSection?.scrollIntoView({ behavior: 'smooth' });
@@ -122,8 +122,8 @@ export default function HeroSection() {
             </button>
           </div>
 
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          {/* Scroll Indicator - Lado derecho */}
+          <div className="absolute bottom-8 right-8 animate-bounce">
             <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
               <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
             </div>

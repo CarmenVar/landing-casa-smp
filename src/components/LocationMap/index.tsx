@@ -47,8 +47,15 @@ export default function LocationMap() {
   };
 
   return (
-    <section className="py-20 bg-base-200" role="region" aria-label={t.title}>
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-base-200 relative" role="region" aria-label={t.title}>
+      {/* Background image de la ciudad */}
+      <div className="absolute inset-0 z-0">
+        <div 
+          className="w-full h-full bg-cover bg-center bg-no-repeat opacity-10"
+          style={{ backgroundImage: "url('/images/city-background.jpg')" }}
+        ></div>
+      </div>
+              <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
             {t.title}

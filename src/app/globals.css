@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFF3E0;
+  --foreground: #4E4E4E;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #4E4E4E;
+    --foreground: #FFF3E0;
   }
 }
 
@@ -20,20 +20,64 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar con la nueva paleta */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #FDF8F3;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #E6A57E;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #F57C00;
+}
+
+/* Estilos personalizados para componentes */
+.btn-primary {
+  background-color: #F57C00 !important;
+  border-color: #F57C00 !important;
+}
+
+.btn-primary:hover {
+  background-color: #E65100 !important;
+  border-color: #E65100 !important;
+}
+
+.text-primary {
+  color: #F57C00 !important;
+}
+
+.bg-primary {
+  background-color: #F57C00 !important;
+}
+
+.bg-secondary {
+  background-color: #E6A57E !important;
+}
+
+.bg-accent {
+  background-color: #8D9C74 !important;
+}
+
+.bg-neutral {
+  background-color: #4E4E4E !important;
+}
+
+/* Fondos personalizados */
+.bg-warm {
+  background-color: #E6A57E !important;
+}
+
+.bg-soft {
+  background-color: #FDF8F3 !important;
+}
+
+.bg-light {
+  background-color: #FFF3E0 !important;
 }

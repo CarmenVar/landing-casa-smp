@@ -112,7 +112,7 @@ export default function Header() {
                 <button
                   onClick={() => handleLanguageChange('es')}
                   onKeyDown={(e) => handleKeyDown(e, () => handleLanguageChange('es'))}
-                  className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
+                  className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
                     selectedLanguage === 'es' 
                       ? 'bg-primary text-white' 
                       : 'bg-transparent text-gray-700 hover:bg-gray-200'
@@ -127,7 +127,7 @@ export default function Header() {
                 <button
                   onClick={() => handleLanguageChange('en')}
                   onKeyDown={(e) => handleKeyDown(e, () => handleLanguageChange('en'))}
-                  className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
+                  className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
                     selectedLanguage === 'en' 
                       ? 'bg-primary text-white' 
                       : 'bg-transparent text-gray-700 hover:bg-gray-200'
